@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/pixi.min.js"></script>
+	<script src="src/controller/physics.js"></script>
+    <script src="src/models/hero.js"></script>
+    <script src="src/models/erth.js"></script>
+    <script src="src/models/sky.js"></script>
+    <script src="src/models/cloud.js"></script>
+    <script src="src/models/track.js"></script>
+    <script src="src/controller/heroController.js"></script>
+</head>
+<body>
+	
+	<div id="app">
+
+	</div>	
+	
+	</script>
+	<script>
+	var app = new PIXI.Application({
+		width:window.innerWidth,
+		height:window.innerHeight/2
+	});
+	window.ticker = new PIXI.Ticker();
+    
+    window.track = new Track()
+             
+	window.app = app
+	document.body.appendChild(app.view);
+	app.start()	
+	
+	</script>
+</body>
+</html>
